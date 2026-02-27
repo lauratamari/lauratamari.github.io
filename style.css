@@ -1,3 +1,6 @@
+tyle · CSS
+Copiar
+
 html, body{
     margin: 0;
     padding: 0;
@@ -192,4 +195,134 @@ canvas{
 
 .contact .content-footer p{
     margin-left: 3%;
+}
+
+/* ── Tablet (max 900px) ── */
+@media (max-width: 900px) {
+
+    .instruction {
+        font-size: 2.5rem;
+        width: 80%;
+    }
+
+    .instruction p {
+        font-size: 1.2rem;
+    }
+
+    .content-about .photo img {
+        width: 100%;
+    }
+
+    .content-about .description p {
+        font-size: 0.95rem;
+    }
+}
+
+/* ── Mobile (max 600px) ── */
+@media (max-width: 600px) {
+
+    /* Navbar */
+    .navbar {
+        flex-wrap: wrap;
+        padding: 10px 0;
+    }
+
+    .navbar .name {
+        margin-left: 5%;
+    }
+
+    .navbar .menu-toggle {
+        display: block;
+        margin-right: 5%;
+    }
+
+    .navbar .menu {
+        display: none;
+        width: 100%;
+        margin: 0;
+        background-color: #fff;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .navbar .menu.active {
+        display: block;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar ul li {
+        margin: 0;
+        padding: 12px 5%;
+        border-bottom: 1px solid #eee;
+    }
+
+    .navbar ul .menu-list-item-linkedin {
+        border-radius: 0;
+        padding: 12px 5%;
+    }
+
+    /* Hero */
+    .instruction {
+        font-size: 1.8rem;
+        width: 88%;
+        letter-spacing: 2px;
+    }
+
+    .instruction p {
+        font-size: 1rem;
+    }
+
+    .home .button {
+        margin-top: -10%;
+    }
+
+    .button img {
+        width: 12%;
+    }
+
+    /* About */
+    .about .content-about {
+        flex-direction: column;
+        width: 90%;
+        padding: 5%;
+    }
+
+    .content-about .photo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .content-about .photo img {
+        width: 55%;
+    }
+
+    .content-about .description {
+        width: 100%;
+    }
+
+    .content-about .description h3,
+    .content-about .description p {
+        margin-left: 0;
+    }
+
+    /* Projects */
+    .projects .title {
+        margin: 5% 2%;
+    }
+
+    /* Footer */
+    .contact .content-footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .contact .content-footer p {
+        margin: 4px 0;
+    }
 }

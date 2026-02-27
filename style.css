@@ -53,7 +53,7 @@ canvas{
 }
 
 .navbar .menu{
-    margin-right: 10%;
+    margin-right: 15%;
 }
 
 .navbar ul{
@@ -121,14 +121,15 @@ canvas{
     text-align: center;
     padding: 1%;
     margin: 2%;
+    margin-bottom: -1.5%;
 }
 
 
 .about .content-about{
     display: flex;
-    width: 60%;
-    padding: 3%;
-    margin: 3% auto;
+    width: 80%;
+    padding: 1%;
+    margin: 2% auto;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.15);
     border-radius: 2%;
 }
@@ -136,11 +137,12 @@ canvas{
 .content-about .photo{
     width: 37%;
     text-align: right;
+    margin-top: 1%;
 }
 
 .content-about .photo img{
     border-radius: 50%;
-    width: 100%;
+    width: 90%;
 }
 
 .content-about .description{
@@ -157,7 +159,7 @@ canvas{
 
 .about .button{
     text-align: center;
-    margin-top: 4%;
+    margin-top: 2%;
 }
 
 .projects{

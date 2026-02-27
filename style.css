@@ -1,0 +1,193 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Segoe UI", sans-serif;
+    scroll-behavior: smooth;
+}
+
+canvas{
+    background: #fff;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.instruction{
+    position: absolute;
+    font-size: 3.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    user-select: none;
+    text-align: center;
+}
+
+.instruction p{
+    font-size: 1.5rem;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.15);
+
+}
+
+.navbar .name{
+    margin-left: 5%;
+}
+
+
+.navbar .menu-toggle{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.navbar .menu{
+    margin-right: 10%;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin-right: 20%;
+    padding: 2%;
+}
+
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    position: relative;
+}
+
+.navbar ul .menu-list-item-linkedin{
+    background-color: #0a66c2;
+    padding: 2%;
+    border-radius: 5%;
+}
+
+.navbar ul .menu-list-item-linkedin a{
+    color: #fff;
+}
+
+.navbar ul li a:hover{
+    color: #669bbc;
+}
+
+.navbar ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #669bbc;
+    transition: width 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+.home .button{
+    text-align: center;
+    margin-top: -5%;
+}
+
+.button img{
+    width: 5%;
+}
+
+.about{
+    scroll-margin-top: 70px;
+}
+
+.about .title{
+    text-align: center;
+    padding: 1%;
+    margin: 2%;
+}
+
+
+.about .content-about{
+    display: flex;
+    width: 60%;
+    padding: 3%;
+    margin: 3% auto;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 2%;
+}
+
+.content-about .photo{
+    width: 37%;
+    text-align: right;
+}
+
+.content-about .photo img{
+    border-radius: 50%;
+    width: 100%;
+}
+
+.content-about .description{
+    width: 60%;
+}
+
+.content-about .description h3{
+    margin-left: 5%;
+}
+
+.content-about .description p{
+    margin-left: 5%;
+}
+
+.about .button{
+    text-align: center;
+    margin-top: 4%;
+}
+
+.projects{
+    scroll-margin-top: 70px;
+}
+
+.projects .title{
+    text-align: center;
+    padding: 1%;
+    margin: 2%;
+}
+
+.projects .button{
+    text-align: center;
+    margin-top: 4%;
+}
+
+.contact{
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.15);
+}
+
+.contact .content-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .content-footer p{
+    margin-left: 3%;
+}

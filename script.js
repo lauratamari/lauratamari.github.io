@@ -102,7 +102,7 @@ function closeMenu() {
 }
 
 toggle.addEventListener("click", () => {
-  navLinks.classList.toggle("open");
+  navLinks.classList.toggle("active");
 });
 
 navItems.forEach(link => {

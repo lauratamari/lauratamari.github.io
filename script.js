@@ -93,8 +93,18 @@
     drawGrid();
 
 const toggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
+const navLinks = document.querySelector(".menu");
+const navItems = document.querySelectorAll(".menu a");
+
+
+function closeMenu() {
+  navLinks.classList.remove("active");
+}
 
 toggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
+  navLinks.classList.toggle("active");
+});
+
+navItems.forEach(link => {
+  link.addEventListener("click", closeMenu);
 });

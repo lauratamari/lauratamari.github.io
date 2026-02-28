@@ -303,11 +303,7 @@ canvas{
     }
 
     .home .button {
-        margin-top: -20%;
-    }
-
-    .button img {
-        width: 12%;
+        display: none;
     }
 
     /* About */
@@ -335,6 +331,10 @@ canvas{
     .content-about .description h3,
     .content-about .description p {
         margin-left: 0;
+    }
+
+    .about .button{
+        display: none;
     }
 
     /* Projects */

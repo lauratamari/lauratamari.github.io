@@ -1,80 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laura Tamari</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laura Tamari — Data Analyst</title>
+  <link rel="stylesheet" href="style1.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="name">
-                <h4 class="name-heading">LAURA TAMARI</h4>
+
+  <!-- ── Nav ───────────────────────────────────────────── -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">Laura Tamari</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="https://www.linkedin.com/in/lauratamari/" target="_blank" class="nav-cta">LinkedIn ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Hero ──────────────────────────────────────────── -->
+  <section class="hero" id="home">
+    <canvas id="grid"></canvas>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Data Analyst · São Paulo</p>
+      <h1>Hi, I'm<br><em>Laura.</em></h1>
+      <p class="hero-body">On my journey to becoming a Data Analyst, I created this portfolio to showcase the case studies I've explored and the projects where I've applied my skills.</p>
+      <a href="#about" class="hero-scroll disable-mobile">
+        <span>Scroll</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M8 3v10M3 9l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── About ─────────────────────────────────────────── -->
+  <section class="about" id="about">
+    <div class="section-inner">
+      <div class="section-label">01 — About</div>
+      <div class="about-grid">
+        <div class="about-photo-col">
+          <div class="photo-frame">
+            <img src="Images/photo.jpg" alt="Laura Tamari" />
+          </div>
+          <div class="about-meta">
+            <div class="meta-item">
+              <span class="meta-key">Degree</span>
+              <span class="meta-val">Information Systems, FIAP</span>
             </div>
-            <div class="menu-toggle" id="hamburger">☰</div>
-            <div class="menu">
-                <ul class="menu-list">
-                    <li class="menu-list-item-home"><a href="#home">Home</a></li>
-                    <li class="menu-list-item-about"><a href="#about">About</a></li>
-                    <li class="menu-list-item-projects"><a href="#projects">Projects</a></li>
-                    <li class="menu-list-item-linkedin"><a href="https://www.linkedin.com/in/lauratamari/" target="_blank">LinkedIn</a></li>
-                </ul>
+            <div class="meta-item">
+              <span class="meta-key">Postgrad</span>
+              <span class="meta-val">Data Analytics, FIAP</span>
             </div>
-        </nav>
-    </header>
-    <section class="home" id="home">
-        <div class="background">
-            <canvas id="grid"></canvas>
-            <div class="instruction">
-                <h2>Hi!</h2>
-                <p>On my journey to becoming a Data Analyst, I created this portfolio website to showcase the case studies I’ve explored and the projects where I’ve applied and experimented with my skills.</p>
+            <div class="meta-item">
+              <span class="meta-key">Currently</span>
+              <span class="meta-val">IBM — Operation Support</span>
             </div>
-            <div class="button">
-                <a href="#about" class="disable-mobile"><img src="Images/down.png" alt=""></a>
+          </div>
+        </div>
+        <div class="about-text-col">
+          <h2>Hello<br><em>everyone!</em></h2>
+          <p>I'm Laura. I graduated in 2023 with a Bachelor's degree in Information Systems from FIAP, and I am currently enrolled in a postgraduate degree in Data Analytics at the same university, with an expected graduation in early 2026.</p>
+          <p>My professional career started in May 2021, when I joined IBM as an intern. Since August 2021, I have been working as a full-time employee in Operation Support. Throughout my experience at IBM, I developed a strong interest in data analysis due to the opportunities I was given to work closely with data, solve problems, and support decision-making processes.</p>
+          <p>This growing interest motivated me to deepen my knowledge in the field, which led me to pursue a postgraduate degree in Data Analytics. This portfolio was created to showcase the case studies and projects where I have applied these skills in practice — demonstrating my ability to transform data into meaningful insights.</p>
+        </div>
+      </div>
+    </div>
+    <a href="#projects" class="section-scroll disable-mobile">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M8 3v10M3 9l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </section>
+
+  <!-- ── Projects ──────────────────────────────────────── -->
+  <section class="projects" id="projects">
+    <div class="section-inner">
+      <div class="section-label">02 — Projects</div>
+      <h2 class="projects-heading">Selected<br><em>Work</em></h2>
+      <div class="projects-list">
+
+        <a href="https://github.com/lauratamari/streaming-churn-case" target="_blank" class="project-card">
+          <div class="project-img">
+            <img src="Images/streaming.webp" alt="Streaming Churn" />
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>Python</span><span>SQL</span><span>Machine Learning</span>
             </div>
-        </div>
-    </section>
-    <section class="about" id="about">
-        <div class="title">
-            <h2>ABOUT ME</h2>
-        </div>
-        <div class="content-about">
-            <div class="photo">
-                <img src="Images/photo.jpg" alt="">
-            </div>
-            <div class="description">
-                <h3>Hello everyone!</h3>
-                <p>I'm Laura. I graduated in 2023 with a Bachelor's degree in Information Systems from FIAP, and I am currently enrolled in a postgraduate degree in Data Analytics at the same university, with an expected graduation in early 2026. <br><br> My professional career started in May 2021, when I joined IBM as an inter. Since August 2021, I have been working as a full-time employee in Operation Support. Throughout my experience at IBM, I developed a strong interest in data analysis due to the opportunities I wa given to work closely with data, solve problems, and support decision-making processes.<br><br> This growing interest motivated me to deepen my knowledge in the field, which led me to persue a postgraduate degree in Data Analytics. Throughout my studies, I have worked across the entire data analysis process - from data cleaning and preparation to exploratory analysis, visualization, and even machine learning applications.<br><br>This portfolio was created to showcase the case studies and projects where I have applied these skills in practice, demonstrating my ability to transform data into meaningful insights.</p>
-            </div>
-        </div>
-        <div class="button">
-            <a href="#projects" class="disable-mobile"><img src="Images/down.png" alt=""></a>
-        </div>
-    </section>
-    <section class="projects" id="projects">
-        <div class="title">
-            <h2>PROJECTS</h2>
-        </div>
-        <div class="content-projects">
-            <div class="blocks">
-                <div class="churn-case">
-                    <img src="Images/streaming.webp" alt="">
-                    <div class="desc">
-                        <a href="https://github.com/lauratamari/streaming-churn-case" target="_blank"><h3>Streaming Churn Prediction</h3></a>
-                        <p>Predicting if a customer will cancel their subscription using Python, SQL and Machine Learning.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="contact" id="contact">
-        <div class="content-footer">
-            <p>São Paulo - Brazil</p>
-            <p>Email - lauraatamari@gmail.com</p>
-            <p>GitHub - <a href="https://github.com/lauratamari?tab=repositories">lauratamari</a></p>
-        </div>
-    </footer>
-    <script src="script.js"></script>
+            <h3>Streaming Churn<br>Prediction</h3>
+            <p>Predicting if a customer will cancel their subscription using Python, SQL and Machine Learning.</p>
+            <span class="project-link">View on GitHub ↗</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ────────────────────────────────────────── -->
+  <footer class="footer" id="contact">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-name">Laura Tamari</span>
+        <span class="footer-location">São Paulo, Brazil</span>
+      </div>
+      <div class="footer-right">
+        <a href="mailto:lauraatamari@gmail.com">lauraatamari@gmail.com</a>
+        <a href="https://github.com/lauratamari?tab=repositories" target="_blank">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/lauratamari/" target="_blank">LinkedIn ↗</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script1.js"></script>
 </body>
 </html>

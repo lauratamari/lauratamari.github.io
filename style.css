@@ -53,13 +53,14 @@ a {
   padding: 0 2.5rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 2rem;
 }
 
 .nav-logo {
   font-family: var(--serif);
   font-size: 1.05rem;
   letter-spacing: .01em;
+  margin-right: auto;
 }
 
 .nav-menu {
@@ -113,11 +114,10 @@ a {
 }
 
 .lang-toggle {
-  position: absolute; 
-  top: 1.2rem; 
-  right: 2.5rem;
   display: flex; 
   gap: .3rem;
+  margin-left: auto;
+  padding-right: 1rem;
 }
 
 .lang-btn {
@@ -555,6 +555,15 @@ header { position: relative; }
     display: flex; 
   }
 
+  .nav-logo {
+    margin-right: 0;
+  }
+
+  .lang-toggle {
+    margin-left: auto;
+    padding-right: 0;
+  }
+
   .nav-menu {
     position: absolute;
     top: var(--nav-h);
@@ -583,7 +592,8 @@ header { position: relative; }
   }
 
   .nav-inner { 
-    padding: 0 1.25rem; 
+    padding: 0 1.25rem;
+    gap: 1rem;
   }
 
   .footer-inner { 
@@ -600,7 +610,6 @@ header { position: relative; }
 }
 @media (max-width: 560px) { 
   .lang-toggle { 
-    top: .8rem; 
-    right: 1rem; 
+    padding-right: 0;
   } 
 }
